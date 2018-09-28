@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.rahi.eshopper">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/shop"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/shop"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UserLoginActivity"
+            android:label="User Login"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".UserRegistrationActivity"
+            android:label="User Registration"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".UserForgotPasswordActivity"
+            android:label="Update Password"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".CartActivity"
+            android:label="Cart" />
+        <activity
+            android:name=".ProductDetailActivity"
+            android:label="Product Detail"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".CheckOutActivity"
+            android:label="Check Out" />
+        <activity
+            android:name=".AdminLoginActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".OrderDetailsActivity"
+            android:label="Order Details"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".SuccessfulOrderActivity"
+            android:label="Successful Order"
+            android:parentActivityName=".MainActivity" />
+    </application>
+
+</manifest>

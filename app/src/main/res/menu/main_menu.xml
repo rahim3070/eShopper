@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--<item-->
+    <!--android:id="@+id/UserCheckOutMenu"-->
+    <!--android:icon="@mipmap/checkout"-->
+    <!--android:title="Cart"-->
+    <!--app:showAsAction="always" />-->
+    <!--<item-->
+    <!--android:id="@+id/UserCartMenu"-->
+    <!--app:actionLayout="@layout/cart_layout"-->
+    <!--android:title="Cart"-->
+    <!--app:showAsAction="always" />-->
+    <item
+        android:id="@+id/UserCartMenu"
+        android:icon="@mipmap/cart"
+        android:title="Cart"
+        app:showAsAction="always" />
+    <!--<item-->
+    <!--android:id="@+id/PlaceOrderMenu"-->
+    <!--android:title="Place Order"-->
+    <!--app:showAsAction="never" />-->
+    <item
+        android:id="@+id/UserRegMenu"
+        android:title="User Registration"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/UserLoginMenu"
+        android:title="Login"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/OrderDetailsMenu"
+        android:title="Order Details"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/AdminLoginMenu"
+        android:title="Admin Login"
+        app:showAsAction="never" />
+</menu>
